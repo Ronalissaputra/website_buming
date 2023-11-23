@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2beca322.css",
+    "main.js": "/static/js/main.539cf3dc.js",
+    "static/media/Buminglogo.png": "/static/media/Buminglogo.5ecb6cd70c074ad85eba.png",
+    "static/media/ibuhamildananak.webp": "/static/media/ibuhamildananak.17d2d1f0c9b79c82f058.webp",
+    "static/media/notfound.png": "/static/media/notfound.9f50f48a15c73bc2d19f.png",
+    "index.html": "/index.html",
+    "main.2beca322.css.map": "/static/css/main.2beca322.css.map",
+    "main.539cf3dc.js.map": "/static/js/main.539cf3dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2beca322.css",
+    "static/js/main.539cf3dc.js"
+  ]
+}
