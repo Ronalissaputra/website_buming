@@ -62,6 +62,7 @@ const Tambahartikel = () => {
           onClose={toggleModal}
           onSubmit={formik.handleSubmit}
           label="Form Artikel"
+          labelbtn="Submit"
           isLoading={isLoading}
         >
           <Input

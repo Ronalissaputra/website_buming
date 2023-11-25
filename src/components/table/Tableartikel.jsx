@@ -3,7 +3,7 @@ import ReactPaginate from "react-paginate";
 import { Link } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { reqGetartikel } from "../../features/artikel/reqGetartikel";
-import { reqDeleteanak } from "../../features/anak/reqDeleteanak";
+import { reqDeleteartikel } from "../../features/artikel/reqDeleteartikel";
 import {
   Table,
   Thead,
@@ -33,14 +33,14 @@ const Tableartikel = () => {
   });
 
   const { mutate } = useMutation({
-    mutationKey: "reqDeleteanak",
-    mutationFn: reqDeleteanak,
+    mutationKey: "reqDeleartikel",
+    mutationFn: reqDeleteartikel,
     onSuccess: () => {
       toast({
         title: "Success",
         description: "Delete success",
         status: "success",
-        position: "top",
+        position: "bottom-right",
         duration: 4000,
         isClosable: true,
       });
@@ -50,7 +50,7 @@ const Tableartikel = () => {
         title: "Error",
         description: "Delete failed",
         status: "error",
-        position: "top",
+        position: "bottom-right",
         duration: 4000,
         isClosable: true,
       });
@@ -61,7 +61,7 @@ const Tableartikel = () => {
     // eslint-disable-next-line no-restricted-globals
     const req = confirm("apakah anda yakin.?");
     if (req) {
-      await mutate(id);
+      mutate(id);
     }
   };
 
